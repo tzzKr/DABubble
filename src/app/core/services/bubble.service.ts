@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase, AngularFireList } from '@angular/fire/compat/database';
+import { User } from '../models/user.model';
+import { Message } from '../models/message.model';
+import { Chatroom } from '../models/chatroom.model';
 
 @Injectable({
   providedIn: 'root'
