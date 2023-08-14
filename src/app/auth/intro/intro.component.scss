@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     animation: backgroundcolor 5s;
+
 }
 
 .intro{
@@ -73,6 +74,7 @@ top:40%;
         top: 75px;
         height: 80px;
         background-color: transparent;
+        z-index: 0;
     }
 }
 
@@ -91,6 +93,7 @@ top:40%;
         left: 55%;
         font-size: 4rem;
         color: white;
+
     }
 
     100%{
@@ -111,6 +114,7 @@ top:40%;
 
     80%{
         background-color: #4149e9;
+
     }
 
     100%{

@@ -1,4 +1,42 @@
 <app-intro></app-intro>
-<div class="TEST">
-    <div class="login">><a href="http://tester.de">TEST</a></div>
+<div class=" background full-height full-width d-flex flex-align-center flex-justify-center">
+    <mat-card class="login-container">
+        <mat-card-header class="d-flex flex-justify-center align-center">
+            <h1 class="headline">Anmeldung</h1>
+            <div class="d-flex">Wir empfehlen dir, die E-Mail-Adresse zu nutzen, die du bei der Arbeit verwendest</div>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="input-container">
+                <input type="email" name="login-email" id="login-email" placeholder="fred.beck@email.com">
+                <div>*Diese E-Mail-Adresse ist leider ungültig</div>
+            </div>
+            <div class="input-container">
+                <input type="password" name="login-password" id="login-password" placeholder="password">
+                <div>Falsches Passwort. Bitte noch einmal versuchen</div>
+            </div>
+        </mat-card-content>
+        <mat-card-content class="d-flex flex-justify-center flex-align-center">
+            <div class="pw-reset d-flex flex-align-center flex-justify-center">Passwort vergessen</div>
+        </mat-card-content>
+        <mat-card-content class="login-oder-container">
+            <div class="line"></div>
+            <div>ODER</div>
+            <div class="line"></div>
+        </mat-card-content>
+        <mat-card-content>
+            <div class="google-login">
+                <img src="/assets/img/login/google.svg">
+                <div>Anmelden mit Google</div>
+            </div>
+        </mat-card-content>
+        <mat-card-content>
+            <div class="login-btn-container d-flex flex-align-center flex-justify-center">
+                <div class="d-flex btn-blue">Anmelden</div>
+                <div class="d-flex btn-white">Gäste-Login</div>
+            </div>
+
+        </mat-card-content>
+    
+
+      </mat-card>
 </div>

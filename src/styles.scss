@@ -2,3 +2,30 @@
 body {
     font-family: 'Nunito', sans-serif;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.d-flex{
+    display: flex;
+}
+
+.flex-row{
+    flex-direction: row;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.full-height{
+    height: 100vh;
+}
