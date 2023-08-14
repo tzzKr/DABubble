@@ -8,10 +8,14 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { UserprofilePopUpComponent } from './shared/components/userprofile-pop-up/userprofile-pop-up.component';
+import { MainPageHeaderComponent } from './layout/main-page-header/main-page-header.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    UserprofilePopUpComponent,
+    MainPageHeaderComponent
   ],
   imports: [
     BrowserModule,
