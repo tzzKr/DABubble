@@ -38,7 +38,7 @@
 
 .logo{
 z-index: 2;
-animation: logo-animation 3s forwards;
+animation: logo-animation 5s forwards;
 top: 20px;
 left: 20px;
 height: 120px;
@@ -57,14 +57,14 @@ height: 120px;
     0%{
         // transform: translate(50%, 50%);
         top: 50%;
-        left: 50%;
+        left: calc(50% - 180px);
     }
 
 
-    80%{
+    90%{
         // transform: translate(50%, 50%);
         top: 50%;
-        left: 50%;
+        left: calc(50% - 180px);
     }
 
     100%{
@@ -85,17 +85,25 @@ height: 120px;
 
     }
     15%{
+      
+    }
+
+    30%{
+        opacity: 0;
+        transform: translate(-100px, 0);
+        filter: blur(10px);
+    }
+
+    50%{
         filter: blur(0px);
 
         opacity: 1;
         transform: translate(0px, 0);
-        color: white;
     }
 
     80%{
         color: white;
-        opacity: 1;
-        transform: translate(0, 0);
+
     }
 
    
@@ -131,8 +139,12 @@ height: 120px;
         transform: translate(150%, 0);
     }
 
-
     30%{
+        transform: translate(150%, 0);
+
+    }
+
+    50%{
         background-color: #4149e9;
         transform: translate(0%, 0);
        
