@@ -7,6 +7,8 @@ import {
 import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import { Router } from '@angular/router';
+import firebase from 'firebase/compat';
+import { GoogleAuthProvider } from 'firebase/auth';
 @Injectable({
   providedIn: 'root',
 })
@@ -116,6 +118,10 @@ export class AuthService {
       displayName: user.displayName,
       photoURL: user.photoURL,
       emailVerified: user.emailVerified,
+      username: '',
+      toJSON: function (): { uid: string; photoURL: string; username: string; email: string; avatarUrl: string; lastActive: firebase.firestore.Timestamp; displayName: string; emailVerified: string; } {
+        throw new Error('Function not implemented.');
+      }
     };
     return userRef.set(userData, {
       merge: true,
@@ -127,5 +133,9 @@ export class AuthService {
       localStorage.removeItem('user');
       this.router.navigate(['sign-in']);
     });
+  }
+
+  authGuard(){
+    return false;
   }
 }

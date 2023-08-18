@@ -12,6 +12,13 @@ import { UserprofilePopUpComponent } from './shared/components/userprofile-pop-u
 import { MainPageHeaderComponent } from './layout/main-page-header/main-page-header.component';
 import { IntroComponent } from './auth/intro/intro.component';
 import { LoginComponent } from './auth/login/login.component';
+import { AuthService } from './core/services/auth.service';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireAuth, AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { AngularFireStorageModule } from '@angular/fire/compat/storage';
+import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 
 @NgModule({
   declarations: [
@@ -19,18 +26,28 @@ import { LoginComponent } from './auth/login/login.component';
     UserprofilePopUpComponent,
     MainPageHeaderComponent,
     IntroComponent,
-    LoginComponent
+    LoginComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
+    AngularFireModule,
+    AngularFireAuthModule,
+    AngularFireStorageModule,
+    AngularFirestoreModule,
+    AngularFireDatabaseModule,
+    AngularFireModule.initializeApp(environment.firebase),
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAuth(() => getAuth()),
     provideDatabase(() => getDatabase()),
     provideFirestore(() => getFirestore())
   ],
-  providers: [],
+  providers: [
+AuthService,
+AngularFirestore
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
