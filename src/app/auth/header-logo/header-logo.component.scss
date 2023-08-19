@@ -1,0 +1,17 @@
+
+
+.logo{
+    padding-top: 16px;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+    flex: flow;
+    font-size: 24px;
+    font-weight: bold;
+    gap: 16px;
+    background-color: #ECEEFE;
+    img{
+        object-fit: contain;
+        width: 120px;
+    }
+}

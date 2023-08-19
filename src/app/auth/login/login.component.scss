@@ -1,63 +1,101 @@
-
-mat-card {
-    padding: 3rem;
-    z-index: 0;
-
+.background {
+    background-color: #ECEEFE;
 }
 
-mat-card-header {
+.page-container {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
-    padding: 0;
+    height: 100vh;
+    background-color: #ECEEFE;
+}
 
-    div {
-        font-weight: 400;
-        text-align: center;
-        font-size: 1.3rem;
-        line-height: 1.5rem;
+#login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 769px;
+    min-width: 606px;
+    max-width: 606px;
+    gap: 32px;
+    z-index: 1;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+    h1 {
+        margin-top: 50px;
+        margin-bottom: 0;
 
     }
 }
 
-.background{
-    background-color: #ECEEFE;
-    
+.login-help-text {
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 1.5rem;
 }
 
-mat-card-content {
-    margin-top: 3rem;
-    display: flex;
+
+.input-container {
     flex-direction: column;
-    gap: 1.5rem;
+    display: flex;
     width: 100%;
 
-    
+    div {
+        color: #ED1E79;
+        font-weight: bold;
+        font-size: 0.8rem;
+    }
+
     input {
         height: 3.5rem;
         padding-left: 1rem;
         padding-right: 1rem;
         outline: none;
-        border: transparent;
+        border: 1px solid transparent;
         background-color: #ECEEFE;
         border-radius: 100px;
-        &::placeholder{
+
+        &::placeholder {
             font-weight: bold;
             color: grey;
             font-size: 1.2rem;
         }
+
+        &:hover {
+            border: 1px solid blue;
+            cursor: pointer;
+        }
+
+
+
+
+    }
+}
+
+
+.login-or-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    .line {
+        display: flex;
+        min-width: 42%;
+        border-bottom: 2px solid rgb(0, 0, 0, 0.1);
+        border-radius: 1px;
     }
 
-    .input-container{
-        flex-direction: column;
-        display: flex;
-        width: 100%;
-
-        div{
-            color: #ED1E79;
-            font-weight: bold;
-            font-size: 0.8rem;
-        }
-       
-
+    div {
+        width: 10%;
+        font-size: 1.2rem;
+        font-weight: 400;
     }
 }
 
@@ -70,14 +108,17 @@ mat-card-content {
 
 }
 
-.pw-reset{
+.pw-reset {
+    display: flex;
     font-size: 1.2rem;
     color: #797EF3;
     font-weight: 400;
     width: fit-content;
+    justify-content: center;
     padding: 0.5rem;
     transition: all 125ms ease-in-out;
-    &:hover{
+
+    &:hover {
         cursor: pointer;
         font-weight: bold;
         background-color: #ECEEFE;
@@ -90,23 +131,12 @@ mat-card-content {
 
 
 
-.login-oder-container{
-    display: flex;
-    flex-direction: row;
-    .line{
-        width: 40%;
-        border-bottom: 2px solid #ECEEFE ;
-    }
 
-    div{
-        font-size: 1.2rem;
-        font-weight: 400;
-    }
-}
 
-.login-btn-container{
+.login-btn-container {
     gap: 30px;
 }
+
 .headline {
     margin-top: 3rem;
     color: #444DF2;
@@ -116,7 +146,7 @@ mat-card-content {
     text-align: center;
 }
 
-.google-login{
+.google-login {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,11 +159,11 @@ mat-card-content {
     font-size: 1.2rem;
 }
 
-.btn-blue{
+.btn-blue {
     display: flex;
     justify-content: center;
     padding: 12px 25px 12px 25px;
-    width: 30%;
+    width: 153px;
     background-color: #444DF2;
     color: white;
     font-weight: bold;
@@ -141,17 +171,17 @@ mat-card-content {
     cursor: pointer;
     transition: all 150ms ease-in-out;
 
-    &:hover{
+    &:hover {
         opacity: 0.7;
         transition: all 150ms ease-in-out;
     }
 }
 
-.btn-white{
+.btn-white {
     display: flex;
     justify-content: center;
     padding: 12px 25px 12px 25px;
-    width: 30%;
+    width: 153px;
     color: #444DF2;
     font-weight: bold;
     border-radius: 100px;
@@ -159,7 +189,7 @@ mat-card-content {
     transition: all 150ms ease-in-out;
     cursor: pointer;
 
-    &:hover{
+    &:hover {
 
         background-color: #444DF2;
         color: white;
@@ -167,3 +197,38 @@ mat-card-content {
     }
 }
 
+.sign-up-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 24px;
+    margin: 32px;
+
+    .sign-up-text {
+        font-size: 18px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .sign-up-link {
+        font-size: 18px;
+        color: #797EF3;
+        cursor: pointer;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-left: 12px;
+        padding-right: 12px;
+        z-index: 1;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        transition: border 125ms ease-in-out;
+
+        &:hover {
+            border: 1px solid #444DF2;
+            transition: border 125ms ease-in-out;
+        }
+    }
+}

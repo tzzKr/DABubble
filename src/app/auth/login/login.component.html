@@ -1,5 +1,38 @@
 <app-intro></app-intro>
-<div class=" background full-height full-width d-flex flex-align-center flex-justify-center">
+<div class="sign-up-container">
+    <div class="sign-up-text">Neu bei DABubble?</div>
+    <div routerLink="/sign-up"  class="sign-up-link">Konto erstellen</div>
+</div>
+<div class="page-container">
+    <section id="login-card">
+        <h1 class="headline">Anmeldung</h1>
+        <div class="login-help-text">Wir empfehlen dir, die E-Mail-Adresse zu nutzen, die du bei der Arbeit verwendest</div>
+        <div class="input-container">
+            <input type="email" name="login-email" id="login-email" placeholder="fred.beck@email.com">
+            <div>*Diese E-Mail-Adresse ist leider ungültig</div>
+        </div>
+        <div class="input-container">
+            <input type="password" name="login-password" id="login-password" placeholder="password">
+            <div>Falsches Passwort. Bitte noch einmal versuchen</div>
+        </div>
+        <div class="pw-reset">Passwort vergessen</div>
+        <div class="login-or-container">
+            <div class="line"></div>
+            <div>ODER</div>
+            <div class="line"></div>
+        </div>
+        <div class="google-login">
+            <img src="/assets/img/login/google.svg">
+            <div>Anmelden mit Google</div>
+        </div>
+        <div class="login-btn-container d-flex flex-align-center flex-justify-center">
+            <div class="btn-blue">Anmelden</div>
+            <div class="btn-white">Gäste-Login</div>
+        </div>
+    </section>
+    <app-auth-bottom></app-auth-bottom>
+</div>
+<!-- <div class=" background full-height full-width d-flex flex-align-center flex-justify-center">
     <mat-card class="login-container">
         <mat-card-header class="d-flex flex-justify-center align-center">
             <h1 class="headline">Anmeldung</h1>
@@ -39,4 +72,4 @@
     
 
       </mat-card>
-</div>
+</div> -->

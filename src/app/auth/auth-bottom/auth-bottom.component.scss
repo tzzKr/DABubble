@@ -1,0 +1,38 @@
+
+#impress-container {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 18px;
+    color: #797EF3;
+    background-color: #ECEEFE;
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        transition: border 125ms ease-in-out;
+        
+
+        
+    &:hover{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        border: 1px solid #797EF3;
+        border-radius: 25px;
+        cursor: pointer;
+        transition: border 125ms ease-in-out;
+    }
+
+    }
+
+
+}
