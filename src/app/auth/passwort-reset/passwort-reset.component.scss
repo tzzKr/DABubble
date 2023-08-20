@@ -1,5 +1,3 @@
-
-
 .page-container {
     display: flex;
     width: 100%;
@@ -10,12 +8,12 @@
     background-color: #ECEEFE;
 }
 
-#sign-up-card {
+#password-reset-card{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 669px;
-    width: calc(606px - 64px);
+    height: 469px;
+    min-width: 606px;
     max-width: 606px;
     gap: 32px;
     z-index: 1;
@@ -26,7 +24,7 @@
     background-color: white;
 }
 
-.sign-up-card-header {
+.password-reset-card-header{
     position: relative;
     display: flex;
     flex-direction: row;
@@ -39,7 +37,17 @@
         height: 30px;
         top: 54px;
         left: 0px;
-        cursor: pointer;
+        background-color: transparent;
+        border-radius: 100%;
+        transition: background-color 125ms ease-in-out;
+
+        &:hover{
+            background-color:#ECEEFE ;
+            border-radius: 100%;
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+        
     }
 
     .headline {
@@ -50,10 +58,9 @@
         width: 100%;
         text-align: center;
     }
-
 }
 
-.sign-up-help-text {
+.password-reset-help-text {
     font-weight: 400;
     text-align: center;
     font-size: 1.3rem;
@@ -64,7 +71,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 32px;
+    gap: 6px;
     width: 100%;
 
 
@@ -103,56 +110,34 @@
             background-color: transparent;
         }
     }
-
-}
-
-.sign-up-policy-container{
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-
-    img{
-        object-fit: contain;
-        margin-right: 16px;
-
-        &:hover{
-            cursor: pointer;
-        }
-    }
-
-    div{
+    
+    div {
         display: flex;
-        font-weight: 400;
+        align-self: flex-start;
+        color: #ED1E79;
+        font-weight: bold;
+        font-size: 0.8rem;
     }
 
-    .sign-up-policy-link{
-        margin-left: 6px;
-        margin-right: 6px;
-        color: #797EF3;
-        font-size: 18px;
-        font-weight: 400;
-        transition: background-color 125ms ease-in-out;
-        border-radius: 25px;
-        padding-left: 0.2px;
-        padding-right: 0.2px;
-
-        &:hover{
-            cursor: pointer;
-            background-color: #ECEEFE;
-            transition: background-color 125ms ease-in-out;
-        }
-    }
 }
 
-.sign-up-btn-container{
+.password-reset-text{
     display: flex;
-    justify-content: flex-end;
-  width: 100%;
+    width: 80%;
+    font-size: 20px;
+    color: #686868;
+    text-align: center;
 }
 
-.sign-up-btn{
-    width: 125px;
-    padding-left: 0px!important;
-    padding-right: 0px!important;
+
+.send-mail-btn{
+    display: flex;
+    background-color: #686868;
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 12px 25px 12px 25px;
+    border-radius: 25px;
+
 }
+

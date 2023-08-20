@@ -19,6 +19,11 @@ import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { AngularFirestore, AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
+import { SignUpComponent } from './auth/sign-up/sign-up.component';
+import { HeaderLogoComponent } from './auth/header-logo/header-logo.component';
+import { AuthBottomComponent } from './auth/auth-bottom/auth-bottom.component';
+import { ChooseAvatarComponent } from './auth/choose-avatar/choose-avatar.component';
+import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +32,11 @@ import { FIREBASE_OPTIONS } from '@angular/fire/compat';
     MainPageHeaderComponent,
     IntroComponent,
     LoginComponent,
+    SignUpComponent,
+    HeaderLogoComponent,
+    AuthBottomComponent,
+    ChooseAvatarComponent,
+    PasswortResetComponent,
 
   ],
   imports: [

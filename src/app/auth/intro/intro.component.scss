@@ -5,9 +5,9 @@
     display: flex;
     top: 0;
     left: 0;
-    
     animation: backgroundcolor 5s;
     overflow: hidden;
+    background-color: #ECEEFE;
 
 
 
@@ -128,7 +128,7 @@ height: 120px;
     }
 
     100%{
-        background-color: transparent;
+        background-color: #ECEEFE;
         z-index: 0;
     }
 }
@@ -159,6 +159,5 @@ height: 120px;
         background-color: transparent;
         
     }
-
    
 }
