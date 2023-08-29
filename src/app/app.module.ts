@@ -24,6 +24,8 @@ import { HeaderLogoComponent } from './auth/header-logo/header-logo.component';
 import { AuthBottomComponent } from './auth/auth-bottom/auth-bottom.component';
 import { ChooseAvatarComponent } from './auth/choose-avatar/choose-avatar.component';
 import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.component';
+import { HomeWorkspacesComponent } from './layout/home-workspaces/home-workspaces.component';
+import { BackgroundContainerComponent } from './layout/background-container/background-container.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.com
     AuthBottomComponent,
     ChooseAvatarComponent,
     PasswortResetComponent,
+    HomeWorkspacesComponent,
+    BackgroundContainerComponent,
 
   ],
   imports: [
