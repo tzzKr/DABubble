@@ -1,8 +1,25 @@
 .container{
-    margin-top: 100px;
     max-width: 360px;
     width: 100%;
-    height: max-content;
+    height: 100%;
     background-color: white;
-    border-radius: 10px;
+    border-radius: 30px;
+    max-height: inherit;
+    box-sizing: border-box;
+    padding: 16px;
+}
+.WorkspaceHeadTitle{
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    align-items: center;
+}
+.WorkspaceHead{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    margin-bottom: 24px;
 }
