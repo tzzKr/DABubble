@@ -1,0 +1,16 @@
+.textbox-container{
+    margin-top: 32px;
+    display: flex;
+    border: 1px solid #ADB0D9;
+    border-radius: 25px;
+    height: 25vh;
+    padding: 1rem;
+
+    input{
+        display: flex;
+        outline: transparent;
+        border: transparent;
+
+        height: 50%;
+    }
+}
