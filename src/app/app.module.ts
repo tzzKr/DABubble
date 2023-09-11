@@ -24,6 +24,9 @@ import { HeaderLogoComponent } from './auth/header-logo/header-logo.component';
 import { AuthBottomComponent } from './auth/auth-bottom/auth-bottom.component';
 import { ChooseAvatarComponent } from './auth/choose-avatar/choose-avatar.component';
 import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.component';
+import { OverlayComponent } from './layout/overlay/overlay.component';
+import { WirteTextBoxComponent } from './layout/right-chat-box/wirte-text-box/wirte-text-box.component';
+import { ThreadChatContainerComponent } from './layout/right-chat-box/thread-chat-container/thread-chat-container.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +40,9 @@ import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.com
     AuthBottomComponent,
     ChooseAvatarComponent,
     PasswortResetComponent,
+    OverlayComponent,
+    WirteTextBoxComponent,
+    ThreadChatContainerComponent,
 
   ],
   imports: [

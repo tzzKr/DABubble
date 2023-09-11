@@ -10,6 +10,10 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     display: flex;
 }
 
+.d-none{
+    display: none;
+}
+
 .flex-row{
     display: flex;
     flex-direction: row;
@@ -37,6 +41,18 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .gap-16{
     gap: 16px;
+}
+
+.fs-14{
+    font-size: 14px;
+}
+
+.fs-24{
+    font-size: 24px;
+}
+
+.fc-purple2{
+    color:  #797EF3
 }
 
 .btn-blue {

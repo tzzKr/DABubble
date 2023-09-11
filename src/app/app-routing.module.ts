@@ -6,13 +6,15 @@ import { AuthGuard } from './core/guard/auth.guard';
 import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ChooseAvatarComponent } from './auth/choose-avatar/choose-avatar.component';
 import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.component';
+import { ThreadChatContainerComponent } from './layout/right-chat-box/thread-chat-container/thread-chat-container.component';
 
 const routes: Routes = [
   {path: '', component: LoginComponent },
   {path: 'home', component: MainPageHeaderComponent},
   {path: 'sign-up', component: SignUpComponent},
   {path: 'sign-up/choose-avatar', component: ChooseAvatarComponent},
-  {path: 'reset-password', component: PasswortResetComponent}
+  {path: 'reset-password', component: PasswortResetComponent},
+  {path: 'right-chat', component: ThreadChatContainerComponent}
 ];
 
 @NgModule({
