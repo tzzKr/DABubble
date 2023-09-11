@@ -24,9 +24,14 @@ import { HeaderLogoComponent } from './auth/header-logo/header-logo.component';
 import { AuthBottomComponent } from './auth/auth-bottom/auth-bottom.component';
 import { ChooseAvatarComponent } from './auth/choose-avatar/choose-avatar.component';
 import { PasswortResetComponent } from './auth/passwort-reset/passwort-reset.component';
+<<<<<<< HEAD
 import { OverlayComponent } from './layout/overlay/overlay.component';
 import { WirteTextBoxComponent } from './layout/right-chat-box/wirte-text-box/wirte-text-box.component';
 import { ThreadChatContainerComponent } from './layout/right-chat-box/thread-chat-container/thread-chat-container.component';
+=======
+import { HomeWorkspacesComponent } from './layout/home-workspaces/home-workspaces.component';
+import { BackgroundContainerComponent } from './layout/background-container/background-container.component';
+>>>>>>> 154e4f09502743a74ad7ce6ecc3123071c05f081
 
 @NgModule({
   declarations: [
@@ -40,9 +45,14 @@ import { ThreadChatContainerComponent } from './layout/right-chat-box/thread-cha
     AuthBottomComponent,
     ChooseAvatarComponent,
     PasswortResetComponent,
+<<<<<<< HEAD
     OverlayComponent,
     WirteTextBoxComponent,
     ThreadChatContainerComponent,
+=======
+    HomeWorkspacesComponent,
+    BackgroundContainerComponent,
+>>>>>>> 154e4f09502743a74ad7ce6ecc3123071c05f081
 
   ],
   imports: [
